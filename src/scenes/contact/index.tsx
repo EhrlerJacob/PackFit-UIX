@@ -65,10 +65,12 @@ const Contact = ({setSelectedPage}: Props) => {
                 }}
                 >
                 <form
+                name="Contact"
+                netlify 
                 target="_blank"
                 onSubmit={SubmitHandler}
                 method="POST"
-                action="https:formsubmit.co/99b53c0edb98c2592afd49337cb8b04a"
+                // action="https:formsubmit.co/99b53c0edb98c2592afd49337cb8b04a"
                 >
                     <input className={FormStyles}
                     type="text"

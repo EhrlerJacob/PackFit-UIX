@@ -66,7 +66,7 @@ const Contact = ({setSelectedPage}: Props) => {
                 >
                 <form
                 name="Contact"
-                netlify 
+                data-netlify="true"
                 target="_blank"
                 onSubmit={SubmitHandler}
                 method="POST"

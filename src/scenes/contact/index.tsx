@@ -66,11 +66,17 @@ const Contact = ({setSelectedPage}: Props) => {
                 >
                 <form
                 name="Contact"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
                 target="_blank"
                 onSubmit={SubmitHandler}
                 method="POST"
-                action="https:formsubmit.co/99b53c0edb98c2592afd49337cb8b04a"
+                // action="https:formsubmit.co/99b53c0edb98c2592afd49337cb8b04a"
                 >
+                    <div hidden>
+                        <input name="bot-field"/>
+                    </div>
+                    <input type="hidden" name="form-name" value="Contact" />
                     <input className={FormStyles}
                     type="text"
                     placeholder="NAME"

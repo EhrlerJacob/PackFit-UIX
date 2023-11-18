@@ -66,11 +66,10 @@ const Contact = ({setSelectedPage}: Props) => {
                 >
                 <form
                 name="Contact"
-                data-netlify="true"
                 target="_blank"
                 onSubmit={SubmitHandler}
                 method="POST"
-                // action="https:formsubmit.co/99b53c0edb98c2592afd49337cb8b04a"
+                action="https:formsubmit.co/99b53c0edb98c2592afd49337cb8b04a"
                 >
                     <input className={FormStyles}
                     type="text"
@@ -86,7 +85,7 @@ const Contact = ({setSelectedPage}: Props) => {
                         </p>
                     )}
                     <input className={FormStyles}
-                    type="text"
+                    type="email"
                     placeholder="EMAIL"
                     {...register("email", {
                         required: true,

@@ -79,6 +79,7 @@ const Contact = ({setSelectedPage}: Props) => {
                     <input type="hidden" name="form-name" value="Contact" />
                     <input className={FormStyles}
                     type="text"
+                    id="name"
                     placeholder="NAME"
                     {...register("name", {
                         required: true,
@@ -92,6 +93,7 @@ const Contact = ({setSelectedPage}: Props) => {
                     )}
                     <input className={FormStyles}
                     type="email"
+                    id="email"
                     placeholder="EMAIL"
                     {...register("email", {
                         required: true,
@@ -104,6 +106,7 @@ const Contact = ({setSelectedPage}: Props) => {
                         </p>
                     )}
                     <textarea className={FormStyles}
+                    id="message"
                     placeholder="MESSAGE"
                     rows={4}
                     cols={50}

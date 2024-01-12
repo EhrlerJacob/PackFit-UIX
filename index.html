@@ -7,7 +7,18 @@
     <title>Pack Fitness</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <form
+      name="Contact"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      >
+      <input type="text" name="name" id="name">
+      <input type="email" name="email" id="email">
+      <textarea name="message" cols="50" rows="4" id="message"></textarea>
+      <input type="hidden" name="form-name" value="Contact" />
+    </form>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
